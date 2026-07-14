@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavala Om | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px 0;
+            color: #ecf0f1;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .item {
+            margin-bottom: 1.5rem;
+        }
+        .item h3 {
+            margin: 0 0 5px 0;
+            color: var(--secondary-color);
+        }
+        .item p.meta {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .skills-category h4 {
+            margin: 0 0 10px 0;
+            color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Adavala Om</h1>
+        <p>PhD Researcher in Machine Intelligence and Data Science</p>
+        <div class="social-links">
+            <a href="https://github.com/omadavala" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/omadavala" target="_blank">LinkedIn</a>
+            <a href="https://leetcode.com/adavalaom19" target="_blank">LeetCode</a>
+            <a href="mailto:omadavala8@gmail.com">Email</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>Indian Institute of Technology Powai</h3>
+                <p class="meta">PhD in Centre for Machine Intelligence and Data Science | Jan 2026 - Present</p>
+                <p>CGPA: 7.0 (1st Semester)</p>
+            </div>
+            <div class="item">
+                <h3>National Forensic Sciences University</h3>
+                <p class="meta">M.Tech in Applied Data Science and Artificial Intelligence | Aug 2023 - May 2025</p>
+                <p>CGPA: 8.9</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Academic Experience</h2>
+            <div class="item">
+                <h3>Teaching Assistant</h3>
+                <p class="meta">Indian Institute of Technology Powai | 2026 - Present</p>
+                <ul>
+                    <li>Facilitate lab sessions and mentor students in core machine learning and data science concepts.</li>
+                    <li>Evaluate assignments and assist faculty in designing coursework for technical subjects.</li>
+                    <li>Guide students in troubleshooting programming frameworks to ensure successful project completion.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="item">
+                <h3>Forgery Detection and Region Highlighting in Handwritten Signatures</h3>
+                <p class="meta">Feb 2025 - May 2025</p>
+                <ul>
+                    <li>Developed a deep learning-based forgery detection system using CNN, GhostNet, GoogleNet, and MesoNet in TensorFlow, achieving up to 96% accuracy.</li>
+                    <li>Implemented region highlighting via OpenCV to localize forged areas, enhancing model interpretability.</li>
+                    <li>Evaluated accuracy and analysis using scikit-learn metrics and Matplotlib visualizations.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Deepfake Image Detection Performance Analysis</h3>
+                <p class="meta">Aug 2024 - Dec 2024</p>
+                <ul>
+                    <li>Trained CNN, MesoNet, and MobileNetV1 models in Python using TensorFlow for deepfake detection.</li>
+                    <li>Evaluated performance using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrix.</li>
+                    <li>Achieved detection accuracies of 83% (CNN), 88% (MesoNet), and 82% (MobileNetV1).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Learning discriminative syntax-semantic patterns with transformer-based contrastive learning (Jan 2026)</li>
+                <li>Forgery detection and region highlighting in handwritten signatures (Dec 2025)</li>
+                <li>Domain-specific knowledge and context in large language models: challenges, concerns, and solutions (Sep 2025)</li>
+                <li>Detection of tumor in Human encephalon using Convolutional Neural Network (Mar 2023)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h4>Languages & Databases</h4>
+                    <p>Python, C, C++, Java, MySQL, PostgreSQL</p>
+                </div>
+                <div class="skills-category">
+                    <h4>Deep Learning & ML</h4>
+                    <p>TensorFlow, HuggingFace, Scikit-learn, OpenCV</p>
+                </div>
+                <div class="skills-category">
+                    <h4>Data Analysis & Vision</h4>
+                    <p>Pandas, NumPy, Matplotlib, PIL, Skimage</p>
+                </div>
+                <div class="skills-category">
+                    <h4>Tools & Frameworks</h4>
+                    <p>Weka, E-Mobiq, StarUML, Wireshark, Ollama, NLTK</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Fundamentals of Deep Learning - NVIDIA</li>
+                <li>AI/ML for Geodata Analysis - ISRO IIRS</li>
+                <li>Data Science & Analytics - hp</li>
+                <li>Programming in Java - NPTEL</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
